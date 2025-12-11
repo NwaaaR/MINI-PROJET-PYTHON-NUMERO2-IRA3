@@ -55,8 +55,8 @@ class Client:
 
 
 ## Test des fonctions :
-client = Client(1, "Doe", "John", 20, "B", [])
-print(client)
-print(client.age_minimum_permis_voiture())
-print(client.age_minimum_permis_moto())
-print(client.age_minimum_permis_camion())
+# client = Client(1, "Doe", "John", 20, "B", [])
+# print(client)
+# print(client.age_minimum_permis_voiture())
+# print(client.age_minimum_permis_moto())
+# print(client.age_minimum_permis_camion())

@@ -2,6 +2,7 @@ class Vehicule:
     def __init__(self, id, marque, modele, categorie, tarif, etat):
             self.id = id
             self.modele = modele
+            self.marque = marque
             self.categorie = categorie
             self.tarif = tarif #Par jour
             self.etat = etat
