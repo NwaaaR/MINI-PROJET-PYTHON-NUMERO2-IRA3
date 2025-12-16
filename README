@@ -1,0 +1,52 @@
+# Système de Gestion de Location de Voitures (RentCarSystem)
+
+Une application de gestion de location de voitures développée en Python, basée sur les principes de la **Programmation Orientée Objet (POO)**. Ce projet offre une interface utilisateur interactive via **Streamlit** pour gérer le parc automobile, les clients et les réservations.
+
+## Fonctionnalités
+
+L'application répond aux besoins de gestion d'une agence de location :
+
+### 1. Gestion de la Flotte Automobile
+* **Hiérarchie de véhicules** : Gestion des **Voitures**, **Camions** et **Motos** via un système d'héritage.
+* **Suivi détaillé** : Marque, modèle, catégorie, tarif journalier et état (ex: "disponible", "en location").
+* **Maintenance** : Gestion de l'entretien des véhicules.
+
+### 2. Gestion des Clients
+* Enregistrement des informations clients (Nom, prénom, âge, permis).
+* **Vérification d'éligibilité** : Contrôle automatique de l'âge minimum et du type de permis requis selon la catégorie du véhicule (ex: permis poids lourd pour un camion).
+* Historique des locations par client.
+
+### 3. Système de Réservation (Rental)
+* Création de réservations liant un client et un véhicule.
+* **Calcul des coûts** : Calcul automatique du montant total en fonction de la durée.
+* **Gestion des règles** : Vérification des disponibilités aux dates choisies et gestion des pénalités (retard, dommages).
+
+### 4. Rapports et Statistiques
+Le système central permet de visualiser en temps réel :
+* Le stock des véhicules disponibles.
+* La liste des locations en cours.
+* Le chiffre d'affaires total généré.
+
+### 5. Tests unitaires :
+Les tests unitaires sont dans le fichier test_systemResa.py
+
+## Architecture Technique & UML 
+
+Le projet respecte une architecture orientée objet :
+
+En utilisant PlantUML pour générer notre diagramme UML.
+
+## Installation
+
+1.  **Installer les dépendances** :
+    Ce projet nécessite `streamlit`.
+    ```bash
+    pip install streamlit
+    ```
+
+## Utilisation
+
+L'application utilise **Streamlit** pour l'interface graphique. Pour lancer le projet, exécutez la commande suivante dans votre terminal :
+
+```bash
+streamlit run app_streamlit.py
